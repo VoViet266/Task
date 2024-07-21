@@ -1,0 +1,145 @@
+// body {
+//   margin: 0;
+//   padding: 0;
+//   font-family: Arial, sans-serif;
+// }
+header {
+  display: inline-flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60%;
+  background-color: rgba(14, 14, 14, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  margin: 10px auto ;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+nav {
+  display: inline-flex;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 18px;
+}
+header .logo{
+  color: #ffffff;
+  margin: 0 20px;
+  size: 3em;
+  // display: block;
+}
+nav ul .ant-dropdown-trigger {
+  display: inline-block;
+  color: #8a8989;
+  font-weight: 300;
+  font-size: 1.2em;
+
+}
+nav ul .ant-dropdown-trigger:hover {
+  color: #ffffff;
+}
+.ant-dropdown .ant-dropdown-menu
+{
+  background-color: #747777;
+  color: #fffefe;
+}
+.base-menu-dropdown
+{
+  margin: 0 20px 0 0;
+ display: none;
+ color: #ffffff;
+ size: 1.2em;
+}
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon .ant-dropdown-menu-submenu-arrow-icon{
+  color: #ffffff;
+
+}
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item
+{
+  background-color: transparent;
+  color: #fffefe;
+}
+nav  .ant-btn {
+  background-color: #333232;
+  color: #fffefe;
+  padding: 0px 15px;
+  margin: 0 20px 0 30px;
+  border: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #8a8989;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+@media (max-width: 1279px) {
+  header {
+    width: 65%;
+  } 
+ }
+@media (max-width: 1218px) {
+  header {
+    width: 70%;
+  } 
+ }
+
+@media (max-width: 1198px) {
+ header {
+   width: 75%;
+ } 
+}
+@media (max-width: 1165px) {
+  header {
+    width: 80%;
+  }
+}
+@media (max-width: 1056px) {
+  header {
+    width: 85%;
+  }
+}
+@media (max-width: 997px) {
+  header {
+    width: 90%;
+  }
+ 
+}
+@media (max-width: 935px) {
+  nav ul li {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 835px) {
+  header {
+   display: flex;
+   justify-content: space-between;
+   min-width: 250px
+  }
+  nav ul li {
+    display: none;
+  }
+  .base-menu-dropdown {
+    display: block;
+  }
+  nav ul .ant-dropdown-trigger{
+    display: none;
+  }
+ 
+}
+
+
+
+

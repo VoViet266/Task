@@ -37,7 +37,7 @@ const Header = () => {
     },
     {
       key: "3",
-      label: <a href="#" style={{color:'#ffffff'}}>Plugins</a>,
+      label: <a href="#" >Plugins</a>,
       children: [
         {
           key: "3.1",
@@ -147,9 +147,8 @@ const itemsLanguage = [
         </Dropdown>
 
         <Dropdown
-          className="base-menu-dropdown"
+          className="menu-dropdown"
           menu={{ items: menuNav }}
-         
         >
           <a onClick={(e) => e.preventDefault()}>
             <Space>

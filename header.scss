@@ -1,8 +1,4 @@
-// body {
-//   margin: 0;
-//   padding: 0;
-//   font-family: Arial, sans-serif;
-// }
+
 header {
   display: inline-flex;
   position: fixed;
@@ -14,132 +10,141 @@ header {
   backdrop-filter: blur(10px);
   border-radius: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  margin: 10px auto ;
+  margin: 10px auto;
   left: 0;
   right: 0;
   z-index: 1;
-}
-nav {
-  display: inline-flex;
-  align-items: center;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-  margin: 0 18px;
-}
-header .logo{
-  color: #ffffff;
-  margin: 0 20px;
-  size: 3em;
-  // display: block;
-}
-nav ul .ant-dropdown-trigger {
-  display: inline-block;
-  color: #8a8989;
-  font-weight: 300;
-  font-size: 1.2em;
 
-}
-nav ul .ant-dropdown-trigger:hover {
-  color: #ffffff;
-}
-.ant-dropdown .ant-dropdown-menu
-{
-  background-color: #747777;
-  color: #fffefe;
-}
-.base-menu-dropdown
-{
-  margin: 0 20px 0 0;
- display: none;
- color: #ffffff;
- size: 1.2em;
-}
-.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-submenu-title .ant-dropdown-menu-submenu-expand-icon .ant-dropdown-menu-submenu-arrow-icon{
-  color: #ffffff;
+  nav {
+    display: inline-flex;
+    align-items: center;
 
-}
-.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item
-{
-  background-color: transparent;
-  color: #fffefe;
-}
-nav  .ant-btn {
-  background-color: #333232;
-  color: #fffefe;
-  padding: 0px 15px;
-  margin: 0 20px 0 30px;
-  border: none;
-}
-nav ul li a {
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #8a8989;
-}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
 
-nav ul li a:hover {
-  color: #ffffff;
-}
-@media (max-width: 1279px) {
-  header {
-    width: 65%;
-  } 
- }
-@media (max-width: 1218px) {
-  header {
-    width: 70%;
-  } 
- }
+      li {
+        display: inline-block;
+        margin: 0 20px;
 
-@media (max-width: 1198px) {
- header {
-   width: 75%;
- } 
-}
-@media (max-width: 1165px) {
-  header {
-    width: 80%;
+        a {
+          text-decoration: none;
+          font-size: 1.2em;
+          color: #8a8989;
+        }
+
+        &:hover {
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+
+      // ant design dropdown
+      .ant-dropdown-trigger {
+        display: inline-block;
+        color: #8a8989;
+        font-weight: 300;
+        font-size: 1.2em;
+
+        &:hover {
+          color: #ffffff;
+        }
+      } 
+    }
   }
-}
-@media (max-width: 1056px) {
-  header {
+  .logo {
+    color: #ffffff;
+    margin: 0 20px;
+    size: 3em;
+  }
+  .menu-dropdown {
+    margin: 0 20px 0 20px;
+    display: none;
+    color: #ffffff;
+    size: 1.2em;
+  }
+
+  @media screen and (max-width: 1279px) {
+    width: 65%;
+    nav {
+      ul {
+        li {
+          margin: 0 19px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1218px) {
+    width: 70%;
+    nav {
+      ul {
+        li {
+          margin: 0 18px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1198px) {
+    width: 75%;
+    nav {
+      ul {
+        li {
+          margin: 0 17px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1165px) {
+    width: 80%;
+    nav {
+      ul {
+        li {
+          margin: 0 16px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1056px) {
     width: 85%;
   }
-}
-@media (max-width: 997px) {
-  header {
+
+  @media screen and (max-width: 997px) {
     width: 90%;
   }
- 
+
+  @media screen and (max-width: 935px) {
+    nav {
+      ul {
+        li {
+          margin: 0 14px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 835px) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+    nav {
+      ul {
+        li {
+          display: none;
+        }
+        .ant-dropdown-trigger {
+          display: none;
+        }
+      }
+    }
+
+    .menu-dropdown {
+      display: block;
+    }
+  }
 }
-@media (max-width: 935px) {
-  nav ul li {
-    margin: 0 10px;
-  }
-}
-@media (max-width: 835px) {
-  header {
-   display: flex;
-   justify-content: space-between;
-   min-width: 250px
-  }
-  nav ul li {
-    display: none;
-  }
-  .base-menu-dropdown {
-    display: block;
-  }
-  nav ul .ant-dropdown-trigger{
-    display: none;
-  }
- 
-}
-
-
-
-

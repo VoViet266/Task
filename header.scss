@@ -1,4 +1,3 @@
-
 header {
   display: inline-flex;
   position: fixed;
@@ -41,7 +40,6 @@ header {
         }
       }
 
-      // ant design dropdown
       .ant-dropdown-trigger {
         display: inline-block;
         color: #8a8989;
@@ -51,19 +49,22 @@ header {
         &:hover {
           color: #ffffff;
         }
-      } 
+      }
     }
   }
+
   .logo {
     color: #ffffff;
     margin: 0 20px;
     size: 3em;
   }
+
   .menu-dropdown {
     margin: 0 20px 0 20px;
     display: none;
     color: #ffffff;
     size: 1.2em;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 1279px) {
@@ -111,14 +112,15 @@ header {
   }
 
   @media screen and (max-width: 1056px) {
-    width: 85%;
+    width: 80%;
   }
 
   @media screen and (max-width: 997px) {
-    width: 90%;
+    width: 80%;
   }
 
   @media screen and (max-width: 935px) {
+    width: 85%;
     nav {
       ul {
         li {
@@ -126,9 +128,12 @@ header {
         }
       }
     }
-  }
+  }@media screen and (max-width: 888px) {
+  width: 90%;
+ }
 
   @media (max-width: 835px) {
+    
     display: flex;
     justify-content: space-between;
     min-width: 250px;
@@ -144,7 +149,10 @@ header {
     }
 
     .menu-dropdown {
-      display: block;
+      display: inline-block;
+      &:hover {
+        color: #b6b1b1;
+      }
     }
   }
 }

@@ -20,7 +20,7 @@ const Setting = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="setting_container">
         <div className="container-item">
           <div className="hearder-setting">
             <h1 className="text-hearder">Settings</h1>

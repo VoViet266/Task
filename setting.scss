@@ -107,13 +107,15 @@
                             font-weight: 400;
 
                         }
-                        .ant-select{
+
+                        .ant-select {
                             width: 200px;
-                           .ant-select-selector{
+
+                            .ant-select-selector {
                                 border: 1px solid rgb(204 206 215);
                                 font-size: medium;
                                 font-weight: 400;
-                           }
+                            }
                         }
 
                         .ant-typography {
@@ -234,7 +236,7 @@
             justify-content: space-between;
             margin: 0 24px;
             padding: 24px 0;
-            border-bottom: 1px solid #e7e0e0;
+            // border-bottom: 1px solid #e7e0e0;
 
             .ant-btn {
                 border-radius: 12px;
